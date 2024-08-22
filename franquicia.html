@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="franquicia.css">
+  <title>Formulario Registro</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+  
+  <section class="form-register">
+    <h4>Formulario Registro</h4>
+    <form action="franquicia.php" method="POST">
+      <input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" required>
+      <input class="controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su Apellido" required>
+      <input class="controls" type="email" name="gmail" id="gmail" placeholder="Ingrese su Correo" required>
+      <input class="controls" type="text" name="zona" id="zona" placeholder="ingresa donde vives" required>
+      <input class="botons" type="submit" value="Registrar">
+    </form>
+  </section>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page con efecto Parallax - MagtimusPro</title>
+    <script src="https://kit.fontawesome.com/0b2ba1b6e4.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivrnet/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="nosotros.css">
+    <style>
+        /*::::::redes:::::::*/
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+.wrapper2
+{
+    width: 90%;
+    max-width: 1536px;
+    margin-inline: auto;
+    position: relative;
+    height: 80px;
+    margin-top: 1rem;
+    overflow: hidden;
+    mask-image: linear-gradient(
+        to right,
+        rgba(50, 50, 50 ,0),
+        rgba(0 ,0, 0, 1) 20%,
+        rgba(0, 0, 0, 1)80%,
+        rgba(50, 50, 50, 0)
+    );
+}
+@keyframes scrollLeft{
+    to{
+        left: -200px;
+    }
+}
+.item
+{
+    width: 17px;
+    height: 30px;
+    border-radius: 4px;
+    position: absolute;
+    left: max(calc(200px * 8), 100%);
+    animation-name: scrollLeft;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.item1
+{
+    animation-delay: calc(30s /8 * (8 - 1) * -1);
+}
+.item2
+{
+    animation-delay: calc(30s /8 * (8 - 2) * -1);
+
+}
+.item3
+{
+    animation-delay: calc(30s /8 * (8 - 3) * -1);
+
+}
+.item4
+{
+    animation-delay: calc(30s /8 * (8 - 4) * -1);
+
+}
+.item5
+{
+    animation-delay: calc(30s /8 * (8 - 5) * -1);
+
+}
+.item6
+{
+    animation-delay: calc(30s /8 * (8 - 6) * -1);
+
+}
+.item7
+{
+    animation-delay: calc(30s /8 * (8 - 7) * -1);
+
+}
+.item8
+{
+    animation-delay: calc(30s /8 * (8 - 8) * -1);
+
+}
+/*::::::footer:::::::*/
+.pie-pagina
+{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1
+{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img
+{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2
+{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p
+{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a
+{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover
+{
+    color: rgb(255, 221, 0);
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <header>
+
+        <div class="container__header">	
+
+            <div class="logo">
+                <img src="momo/media/OIG2.OhcfmH70bM0.jpg" alt="">
+            </div>
+
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li><a href="momo/index.php">inicio</a></li>
+                        <li><a href="franquicia.html">franquicias</a></li>
+                        <li><a href="locales.html">ubicacion</a></li>
+                        <li><a href="noticias.html">noticias</a></li>
+                        <li><a href="admin/admin.php">admin</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <i class="fa-solid fa-bars" id="icon_menu"></i>
+            <div class="header__register">
+                
+            </div>
+        </div>
+
+    </header>
+
+    <main>
+
+        <div class="cover">
+            
+            <div class="text__information-cover">
+                <h1>sobre dinosport.</h1>
+
+                <p>En un mundo cada vez más conectado, DinoSport se destacó como la plataforma ideal para todos los entusiastas de los deportes al aire libre. Fundada por un grupo de expertos en e-commerce y deporte, DinoSport nació con el objetivo de ofrecer una experiencia de compra en línea excepcional para productos deportivos de alta calidad..</p>
+
+
+            </div>
+
+            <div class="media__cover">
+                <video src="momo/media/animacion_cover.webm" autoplay playinline loop muted preload="auto"></video>
+            </div>
+
+
+        </div>
+
+        <div class="container__banner">
+
+            <div class="banner">
+                <div class="banner__icon-heart">
+                    <img src="momo/media/heart_notify.png" id="icon_heart" alt="">
+                </div>
+                <div class="banner__icon-fire">
+                    <img src="momo/media/fire-dynamic-color.png" id="icon_fire" alt="">
+                </div>
+                <div class="banner__text">
+                    <h2>La historia de DinoSport es una muestra de cómo la pasión por el deporte y la tecnología pueden unirse para crear algo verdaderamente especial.</h2>
+                   
+                </div>
+            </div>
+
+        </div>
+
+   
+    <section class="redes">
+        <div class="wrappe">
+            <br>
+            <div class="item item1">
+                <i class="fa-solid fa-mug-saucer fa-2xl"></i>
+            </div>
+            <div class="item item2">
+                <i class="fa-brands fa-facebook fa-2xl"></i>
+            </div>
+            <div class="item item3">
+                <i class="fa-brands fa-twitter fa-2xl"></i>
+            </div>
+            <div class="item item4">
+                <i class="fa-brands fa-telegram fa-2xl"></i>
+            </div>
+            <div class="item item5">
+                <i class="fa-brands fa-tiktok fa-2xl"></i>
+            </div>
+            <div class="item item6">
+                <i class="fa-brands fa-square-whatsapp fa-2xl"></i>
+            </div>
+            <div class="item item7">
+                <i class="fa-brands fa-square-instagram fa-2xl"></i>
+            </div>
+            <div class="item item8">
+                <i class="fa-solid fa-cookie-bite fa-2xl"></i>
+            </div>
+        </div>
+        <br><br>
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="image/coffee_image.png" alt="">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>SOBRE NOSOSTROS</h2>
+                    <P></P>
+                    <P></P>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="https://www.facebook.com/profile.php?id=61557738003551&mibextid=ZbWKwL" class="fa fa-facebook"></a>
+                        <a href="https://www.instagram.com/elec.trokings?igsh=MXYyYTdud2xjeTg0cQ==" class="fa fa-instagram"></a>
+                        <a href="https://x.com/cubito812117?s=08" class="fa fa fa-twitter"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        </section>
+    </main>
+    <script src="nosotros.js"></script>
+</body>
+</html>

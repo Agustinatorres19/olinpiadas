@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ubicación de Dino Cafe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #d8c8fc;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(218, 245, 243, 0.1);
+        }
+        .left-section {
+            width: 50%;
+            padding: 20px;
+            background-color: #e4e4e4;
+            background-size: cover;
+            color: white;
+        }
+        .left-section h1 {
+            margin: 0 0 20px;
+        }
+        .images {
+            display: flex;
+            justify-content: space-between;
+        }
+        .images img {
+          cursor: pointer; 
+          transition: 4s;
+            width: 30%;
+            border-radius: 5px; 
+        }
+        .images img:hover{
+            transform: scale(1.1);
+            transition: 4s;
+        }
+        .right-section {
+            width: 50%;
+        }
+
+  /* Asegura que el contenedor del navbar esté en la parte superior de la página */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #cafaf6; /* Cambia el color de fondo según tu preferencia */
+    padding: 10px 0;
+}
+
+/* Centra el contenido dentro del navbar */
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Espacio entre los elementos del menú */
+.navbar ul li {
+    margin: 0 15px;
+}
+
+/* Estilo para los enlaces del menú */
+.navbar ul li a {
+    text-decoration: none;
+    color: black; /* Ajusta el color del texto según tu preferencia */
+}
+
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="momo/index.php">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="locales.html">Locales</a></li>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="franquicias.html">Franquicia</a></li>
+        </ul>
+    </nav>
+    
+        <div class="right-section">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.0960193569063!2d-65.4146177257324!3d-24.792165407958795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941bc3a4f3b4ec9b%3A0x24c74a778f708d2d!2sDino%20Sport%20-%20Para%20Vestir%20A%20la%20Familia!5e0!3m2!1ses-419!2sar!4v1723764942092!5m2!1ses-419!2sar" 
+                width="600" 
+                height="450" 
+               >
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>

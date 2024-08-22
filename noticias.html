@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="noticias.css">
+    <title>Noticias</title>
+    <style>
+        .menu-derecha {
+float: right;
+margin-right: 20px;
+}
+
+.menu-derecha ul {
+padding: 0;
+}
+
+.menu-derecha ul li {
+display: inline;
+margin-right: 10px;
+}
+
+.menu-derecha ul li:last-child {
+margin-right: 0;
+}
+.menu2 {
+display: flex;
+gap: 2rem;
+}
+
+.menu2 li {
+list-style: none;
+position: relative; /* Añadido */
+}
+
+.menu2 a {
+text-decoration: none;
+font-size: 1.3rem;
+color: var(--dark-color);
+font-weight: 600;
+text-transform: uppercase;
+position: relative;
+}
+
+/* Nuevo estilo para la barra amarilla */
+.menu2 li::before {
+content: '';
+position: absolute;
+bottom: -3px;
+left: 0;
+width: 100%;
+height: 3px;
+background-color: rgb(226, 250, 247); /* Cambia el color aquí */
+transform: scaleX(0); /* La barra estará inicialmente invisible */
+transform-origin: left;
+transition: transform 0.3s ease;
+}
+
+.menu2 li:hover::before {
+transform: scaleX(1); /* Hace visible la barra al hacer hover */
+}
+
+.menu2 a:hover {
+color: #b4f8c9;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="menu-derecha">
+        <ul class="menu2">
+            <li><a href="nosotros.html">nosotros</a></li>
+            <li><a href="franquicias.html">franquicias</a></li>
+            <li><a href="locales.html">locales</a></li>
+            <li><a href="noticias.html">noticias</a></li>
+            <li><a href="index.php">inicio</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>NOTICIAS</h1>
+        <header>
+            <nav>
+                <span class="cat" onclick="buscar('Tecnología')">Tecnología</span>
+                <span class="cat" onclick="buscar('programación')">Programación</span>
+                <span class="cat" onclick="buscar('deportes')">Deportes</span>
+                <span class="cat" onclick="buscar('economía')">Economía</span>
+                <span class="cat" onclick="buscar('educación')">Educación</span>
+            </nav>
+            <div class="busqueda">
+                <input type="text" placeholder="Qué desea buscar" id="busqueda">
+                <button onclick="buscarTema()">Buscar</button>
+            </div>
+        </header>
+
+
+        <div class="container-noticias">
+
+        </div>
+    </div>
+    <script src="noticias.js"></script>
+    
+</body>
+
+</html>
